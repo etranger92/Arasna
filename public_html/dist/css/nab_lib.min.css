@@ -1,0 +1,1 @@
+@keyframes wave{0%,100%{margin-left:0}50%{margin-left:-1600px}}.wave{bottom:-1px;animation:5s cubic-bezier(.36,.45,.63,.53) infinite wave;width:210%}.center_inlineBlock{left:50%;transform:translateX(-50%);position:relative}.center_div{margin:auto}.justify_text{text-align:justify;text-justify:inter-word}

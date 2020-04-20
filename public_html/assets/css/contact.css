@@ -1,0 +1,166 @@
+@import "body.css";
+/*============================== 
+	- Author: Nabil
+	- Website: Nab Graph.com
+================================= */
+
+/*---------------------- 
+	Stylesheet Guide
+  ----------------------
+00. PRELOADER
+
+01. GENERAL
+    01.1 Html
+    01.2 Body	
+    01.3 Animations
+02. HEADER
+    02.1 Style header & Border
+
+    02.2 Navigation
+        02.2.1 Desktop
+        02.2.2 Mobile
+    02.3 Presentation header
+03. SERVICES
+    03.1 Service_part_one
+    03.2 Service_part_two
+    03.3 Media query  
+04. Our language
+    04.1 Languages
+05. Web marketing
+    05.1 Web marketing
+06. Make us different
+    06.1 make us different
+    06.2 Media query
+07. Design
+*/
+
+/*===============================================*/
+/* 01. GENERAL	 							     */
+/*===============================================*/
+
+/* ----------------------------------------------*/
+/* 01.1 Animations      						 */
+/* ----------------------------------------------*/
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.container_form {
+  height: auto;
+  position: relative;
+}
+
+#container .main_div .contact_me .container_form h1 {
+  text-align: right;
+  font-family: Great Vibes, cursive;
+  font-size: 4rem;
+  padding-right: 5rem;
+  opacity: 0;
+}
+
+.contact_us_content .contact_me .container_form form {
+  width: 100vw;
+  color: black;
+  margin-top: 3rem;
+  opacity: 0;
+}
+
+.contact_us_content .container_form form div {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  max-width: 55vw;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_us_content.container_form form div label {
+  font-size: 2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  color: #4a4848;
+}
+
+.contact_us_content .container_form form div input {
+  height: 1.5rem;
+  border-radius: 10px;
+  text-indent: 10px;
+}
+
+.contact_us_content .container_form form div textarea {
+  border-radius: 5px 5px;
+  height: 5rem;
+  color: white;
+  border: 1px solid grey;
+  text-indent: 10px;
+  line-height: 20px;
+}
+
+.contact_us_content .container_form form select {
+  border-bottom: 1px solid white;
+  color: whitesmoke;
+}
+
+.contact_us_content .container_form .submit {
+  margin-top: 4rem;
+  width: 10rem;
+}
+
+form div label {
+  color: var(--h4-color);
+}
+
+.contact_us_content .container_form .submit input {
+  height: 2.5rem;
+  border: 1px solid white;
+  background-color: gray;
+  background-color: #4a4848;
+  border-radius: 4px 4px;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+}
+
+.contact_us_content .container_form .submit input:hover {
+  background-color: #bb0505;
+}
+
+.form_effect {
+  -webkit-animation: animatezoom 1s ease forwards;
+  animation: animatezoom 1s ease forwards;
+}
+
+.border_error {
+  border: 2px solid red !important;
+}

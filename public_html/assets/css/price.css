@@ -1,0 +1,392 @@
+@import "body.css";
+
+/*============================== 
+	- Author: Nabil
+	- Website: Nab Graph.com
+================================= */
+
+/*---------------------- 
+	Stylesheet Guide
+  ----------------------
+00. PRELOADER
+
+01. GENERAL
+    01.1 Html
+    01.2 Body	
+    01.3 Animations
+02. HEADER
+    02.1 Style header & Border
+    02.2 Navigation
+        02.2.1 Desktop
+        02.2.2 Mobile
+    02.3 Presentation header
+03. introduction_price
+    03.1 intro price
+    03.2 content pic
+    03.3 Media query  
+04. Steps process
+    04.1 presentation
+    04.2 steps
+    04.3 Media query  
+05. Price content
+    05.1 Formule
+    05.1 Title & formule
+
+*/
+
+
+
+
+/* ----------------------------------------------*/
+/* 03. Introduction price					     */
+/* ----------------------------------------------*/
+
+/* 03.1 Introduction price                       */
+/*
+ ----------------------------------------------*/
+.introduction_price_content {
+
+    display: -webkit-box;
+
+    display: flex;
+}
+
+
+
+.presentation_price {
+    -webkit-box-flex: 1.5;
+    flex: 1.5;
+
+}
+
+.para_presentation_price {
+    width: 70%;
+}
+
+
+
+/* 03.2 Content pic           Html DELETED*                   */
+/* ----------------------------------------------*/
+
+.image_intro_price {
+    -webkit-box-flex: 1;
+    flex: 1;
+
+}
+
+.image_intro_price div {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.image_intro_price div img {
+    height: 100%;
+    width: 180%;
+    position: absolute;
+    left: -10rem;
+    padding-left: 1rem;
+    z-index: -10;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .introduction_price_content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+
+
+    .para_presentation_price {
+        width: 100%;
+        padding: 0;
+    }
+
+
+
+
+}
+
+/* ----------------------------------------------*/
+/* 04. Steps process					         */
+/* ----------------------------------------------*/
+
+
+.presentation_content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 80vw;
+}
+
+@media screen and (max-width: 800px) {
+    .presentation_content {
+        width: 100%;
+
+    }
+}
+
+/* 04.1 presentation_steps                       */
+/* ----------------------------------------------*/
+.presentation_steps {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    height: 13vh;
+
+}
+
+.presentation_steps div {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    margin-left: 0.5rem;
+    opacity: 1;
+    background-color: #3e3e3e;
+    border-radius: 40px;
+    color: #a2a2a2;
+
+}
+
+
+.add_background {
+    background: var(--svg-background) !important;
+    color: white !important;
+}
+
+.presentation_steps h1 {
+    margin: auto;
+}
+
+
+/* 04.2 Steps                  			         */
+/* ----------------------------------------------*/
+
+.steps_info article {
+    padding: 2rem;
+}
+
+.steps_info article .titles_info_steps h2 {
+    padding-top: 0.2rem;
+    font-size: 20px
+}
+
+
+
+.titles_step:hover {
+    cursor: pointer;
+}
+
+/* 04.3 Query Selector                			         */
+/* ----------------------------------------------*/
+@media screen and (max-width: 800px) {
+
+
+
+    .presentation_steps {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+
+    }
+
+    .steps_info article {
+
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .presentation_steps div {
+        height: 20vh;
+    }
+
+    .presentation_steps div {
+        margin-left: 0rem;
+    }
+
+
+    .steps_info article p {
+        text-align: justify;
+        text-justify: inter-word;
+        padding-top: 0rem;
+    }
+}
+
+
+/* ----------------------------------------------*/
+/* 05. Price content 					         */
+/* ----------------------------------------------*/
+
+/* 05.1 Price content 					         */
+/* ----------------------------------------------*/
+.price_content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+/* 05.2  Title & formules			             */
+/* ----------------------------------------------*/
+.prices_formule_content {
+    display: -webkit-box;
+    display: flex;
+}
+
+.prices_formule_content:nth-child(3) {
+    padding-top: 3rem;
+}
+
+.price_content .price_title {
+    display: -webkit-box;
+    display: flex;
+    background: var(--svg-background);
+    margin: 0;
+    padding: 1;
+    border-radius: 15px 0px 0px 10px;
+    width: 30vw;
+
+}
+
+.price_content div h1 {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    font-size: 26px;
+    margin: auto;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+
+
+.formules {
+
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    flex-basis: 40vw;
+}
+
+.intro_description {
+    height: 60vh;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+}
+
+.intro_description .devise_price {
+    font-size: 46px;
+    position: relative;
+}
+
+.intro_description .btn {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.intro_description span {
+    text-align: left;
+    padding-left: 1rem;
+    padding-left: 1rem;
+    font-size: 25px;
+    color: #882847;
+    font-weight: bold;
+
+}
+
+.price_content .formules:nth-child(2) {
+    margin-left: 0;
+}
+
+.description_formule {
+    width: 100%;
+    height: 40vh;
+    -webkit-box-pack: space-evenly;
+    justify-content: space-evenly;
+    text-align: left;
+    overflow-y: scroll;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.description_formule p {
+    padding-top: .6rem;
+}
+
+.description_formule p:before {
+    content: "\25A0";
+    color: #791b1b;
+    font-weight: bold;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 1em;
+}
+
+
+
+.description_formule::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+
+/* Handle */
+
+
+
+.formules h2 {
+    font-size: 46px;
+    height: 10vh;
+    padding: 1rem;
+}
+
+.formules .btn {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .price_content .prices_formule_content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+    }
+
+
+
+    .price_content .price_title {
+
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .formules {
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+
+    .price_content .formules:nth-child(2) {
+        margin-top: 0rem;
+    }
+
+    .price_content div h1 {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+
+    .price_content .price_title {
+        width: 100%;
+        height: 30vh;
+
+    }
+}

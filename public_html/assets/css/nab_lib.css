@@ -1,0 +1,49 @@
+/* Belle color pour paragraph #5c6771; */
+/* background-color: rgba(0,0,0,.3333); pour transparent comme resto le bristol*/
+
+/* Animations */
+
+
+@keyframes wave {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: -1600px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+/* CLASS ANIMATIONS */
+
+/* Must be added to an svg */
+.wave {
+    bottom: -1px;
+    animation: wave 5s cubic-bezier(.36, .45, .63, .53) infinite;
+    width: 210%;
+
+}
+
+/* Center Element */
+.center_inlineBlock {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.center_div {
+    margin: auto;
+}
+
+.justify_text {
+    text-align: justify;
+    text-justify: inter-word;
+}

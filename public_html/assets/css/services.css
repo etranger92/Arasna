@@ -1,0 +1,374 @@
+@import "body.css";
+/*============================== 
+	- Author: Nabil
+	- Website: Nab Graph.com
+================================= */
+
+/*---------------------- 
+	Stylesheet Guide
+  ----------------------
+00. PRELOADER
+
+01. GENERAL
+    01.1 Html
+    01.2 Body	
+    01.3 Animations
+02. HEADER
+    02.1 Style header & Border
+
+    02.2 Navigation
+        02.2.1 Desktop
+        02.2.2 Mobile
+    02.3 Presentation header
+03. SERVICES
+    03.1 Service_part_one
+    03.2 Service_part_two
+    03.3 Media query  
+04. Our language
+    04.1 Languages
+05. Web marketing
+    05.1 Web marketing
+06. Make us different
+    06.1 make us different
+    06.2 Media query
+07. Design
+*/
+
+/*===============================================*/
+/* 01. GENERAL	 							     */
+/*===============================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li,
+ul,
+blockquote {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ----------------------------------------------*/
+/* 03. Services						             */
+/* ----------------------------------------------*/
+
+.services {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+}
+
+h2 {
+  background: var(--nav-header-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+h3 {
+  color: var(--h3-color);
+  padding-bottom: 0.5rem;
+}
+
+/* 03.1 service_part_one     			         */
+/* ----------------------------------------------*/
+.service_part_one {
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+.service_part_one article:nth-child(1) {
+  margin-bottom: 2rem;
+}
+
+.service_part_one article:nth-child(2) {
+  padding-top: 2rem;
+  border-top: 1px solid #efefef;
+}
+
+.service_part_one article:nth-child(2) button {
+  margin-top: 1rem;
+}
+
+/* 03.2 service_part_two    			         */
+/* ----------------------------------------------*/
+.service_part_two {
+  -webkit-box-flex: 2;
+  flex: 2;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.service_part_two p {
+  text-align: justify;
+}
+
+.service_part_two .subs {
+  display: -webkit-box;
+  display: flex;
+}
+
+.service_part_two .subs article {
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: var(--padding-inside-article);
+  padding-top: 0rem;
+}
+
+.service_part_two .subs article p {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-bottom: 2rem;
+}
+
+.service_part_two div {
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-justify: justify;
+}
+
+.after_border_cut:after {
+  -webkit-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  background-color: #fff;
+  bottom: -50px;
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 100px;
+  z-index: 1;
+  border-bottom: 1px solid #db1570;
+}
+
+/* 03.3 Media query  			                 */
+/* ----------------------------------------------*/
+@media screen and (max-width: 750px) {
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .service_part_two .subs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  .service_part_two {
+    padding-top: 2rem;
+    padding-left: 0;
+  }
+
+  .service_part_two .subs article {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .service_part_two .titles {
+    padding: 0 !important;
+  }
+}
+
+/* ----------------------------------------------*/
+/* 04. language	 programmation				     */
+/* ----------------------------------------------*/
+
+/* 04.1 Language            			         */
+/* ----------------------------------------------*/
+.languages_programmation {
+  background: linear-gradient(-225deg, #a445b2 0%, #d41872 52%, #ff0066 100%);
+  position: relative;
+}
+
+.languages_programmation div p {
+  color: var(--color-text-when-background-pink);
+}
+
+.languages_programmation h2 {
+  background: var(--color-h2-when-background-pink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* ----------------------------------------------*/
+/* 05. web_hosting       			             */
+/* ----------------------------------------------*/
+/* 05.1 Web host         			         */
+/* ----------------------------------------------*/
+.web_hosting {
+  position: relative;
+}
+
+.web_hosting::before {
+  -webkit-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  background-color: #fff;
+  top: -50px;
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 100px;
+  z-index: 1;
+}
+
+/* ----------------------------------------------*/
+/* 06. Make_us_different    			             */
+/* ----------------------------------------------*/
+
+/* 06.1 Make us different         			         */
+/* ----------------------------------------------*/
+.make_us_different {
+  display: -webkit-box;
+  display: flex;
+  padding: 2rem;
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+  padding-top: 4rem !important;
+  border-bottom: 1px solid #db1570 !important;
+}
+
+.make_us_different article {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.make_us_different article h2 {
+  text-align: center;
+  font-size: 48px;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.make_us_different article p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.make_us_different article span {
+  display: block;
+  text-align: center;
+}
+
+.make_us_different article span:nth-child(2) {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.make_us_different article span:nth-child(3) {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-top: 0.4rem;
+  background: var(--nav-header-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* 06.2 Media query          			         */
+/* ----------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+  .make_us_different article {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .make_us_different article {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .make_us_different {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+/* ----------------------------------------------*/
+/* 07. Design   			             */
+/* ----------------------------------------------*/
+
+/* 07. Design          			         */
+/* ----------------------------------------------*/
+
+.design h1 {
+  text-align: center;
+}
+
+.design p {
+  margin-top: 2rem;
+}
+
+/*svg add to test */
+
+.nectar-shape-divider {
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  height: 30%;
+  position: absolute;
+  fill: white;
+}
+
+.nectar-shape-divider-wrap[data-style="curve_opacity"] svg path:nth-child(1),
+.nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
+  opacity: 0.15;
+}
+
+.nectar-shape-divider-wrap[data-style="curve_opacity"] svg path:nth-child(2),
+.nectar-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
+  opacity: 0.3;
+}
+
+.curve-shape-divider-wrap[data-style="curve_opacity"] svg path:nth-child(1),
+.curve-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(1) {
+  opacity: 0.15;
+}
+
+.curve-shape-divider-wrap[data-style="curve_opacity"] svg path:nth-child(2),
+.curve-shape-divider-wrap[data-style="waves_opacity_alt"] svg path:nth-child(2) {
+  opacity: 0.3;
+}
+
+.nectar-shape-divider1 {
+  width: 150vw;
+  top: -70px;
+  left: -25%;
+  height: 350px;
+  position: relative;
+  fill: white;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 400px) {
+  .nectar-shape-divider1 {
+    height: 450px;
+  }
+
+  .nectar-shape-divider {
+    height: 20%;
+  }
+}

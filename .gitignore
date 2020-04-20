@@ -1,0 +1,9 @@
+package-lock.json
+.DS_Store
+node_modules/
+gulpfile.js
+backend
+**/public_html/assets/img
+**/public_html/dist/img
+
+

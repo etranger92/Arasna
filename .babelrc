@@ -1,0 +1,6 @@
+{
+  "presets": ["@babel/preset-env"]
+}
+
+// We cann add multi-settings like using "targets" etc
+// See there https://gist.github.com/prof3ssorSt3v3/c5fc4a1790645f1db97c3f167d19db42
